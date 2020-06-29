@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(196, 253, 196, 0.692);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(110, 252, 110);
+    width: 60%;
+    border-radius: 60px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 50px;
+    color: rgb(175, 0, 0);
+    text-align: center;
+}
+
+header>p:first-of-type {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+header>p:last-of-type {
+    padding-bottom: 50px;
+    align-self: center;
+    width: 80%;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(205, 250, 205);
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.form-row-container:first-of-type {
+    margin-top: 50px;
+}
+
+.form-row>input[type="text"],
+.form-row>input[type="email"],
+.form-row>input[type="number"],
+select,
+textarea{
+    background-color: rgba(196, 253, 196);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+}
+
+::placeholder {
+    color: green;
+}
+
+label,
+legend {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.single-row {
+    margin-top: 50px;
+}
+
+fieldset {
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    padding: 15px;
+    border-radius: 25px;
+    background-color: rgba(196, 253, 196);
+    border: 2px solid rgba(196, 253, 196);
+    cursor: pointer;
+}
+
+.label-container>input {
+    display: none;
+}
+
+.label-container>input:checked + label {
+    background-color: rgba(196, 253, 196);
+    color: green;
+    border: 2px solid green;
+    
+}
+
+.label-container>label {
+    margin-bottom: 0;
+}
+
+.checkbox-option {
+    margin-bottom: 10px;
+}
+
+.checkbox-option:last-of-type {
+    margin-bottom: 0px;
+}
+
+.zakres-span {
+    font-size: 20px;
+    margin-left: 25px;
+    overflow: hidden;
+    display: block;
+}
+
+.checkbox-option>input {
+    margin-top: 5px;
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+
+textarea {
+    height: 105px;
+    resize: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: green;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 35px;
+    border: none;
+    color: rgba(196, 253, 196);
+    width: 400px;
+    border: 5px solid green;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 5px solid rgba(196, 253, 196);
+}

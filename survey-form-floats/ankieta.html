@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Projektowanie orgrodów</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <h1 id="title">Róża</h1>
+            <p>Ogrody to nasza pasja.</p>
+            <p class="border-bottom" id="description">Wypełnij formularz a skontaktujemy się z tobą i stworzymy ogród
+                twoich marzeń.</p>
+        </header>
+
+
+        <form action="" method="get" id="survey-form">
+
+            <div class="form-row-container">
+                <div class="form-row">
+                    <label id="name-label" for="name">Wpisz imię i nazwisko:</label>
+                    <input id="name" type="text" placeholder="Jan Kowalski" required />
+                </div>
+            </div>
+
+            <div class="form-row-container">
+                <div class="form-row">
+                    <label id="email-label" for="email">Wpisz e-mail:</label>
+                    <input id="email" name="email" type="email" placeholder="jankowalski&#x40;kwiaty.pl" required />
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom">
+                <div class="form-row">
+                    <label id="number-label" for="number">Podaj nr telefonu:</label>
+                    <input id="number" name="number" type="number" placeholder="999 999 999" min="100000000"
+                        max="999999999" step="" />
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom single-row">
+                <div class="form-row">
+                    <label for="dropdown">Wybierz wielkość swojego ogrodu:</label>
+                    <select id="dropdown" name="wielkosc-ogrodu">
+                        <option value="s">mały</option>
+                        <option value="m">średni</option>
+                        <option value="l">duży</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom single-row">
+                <div class="form-row">
+                    <fieldset>
+                        <legend>Styl ogrodu:</legend>
+                        <div class="radio-container">
+                        <input id="style-1"
+                        name="garden-style"
+                        type="radio"
+                        value="projektant-marcin"/>
+                        <label for="style-1" class="radio-label">Tradycyjny</label>
+                    </div>
+
+                        <div class="radio-container">
+                        <input id="style-2"
+                        name="garden-style"
+                        type="radio"
+                        value="projektantka-kasia"/>
+                        <label for="style-2" class="radio-label">Modernistyczny</label>
+                    </div>
+
+                        <div class="radio-container radio-3">
+                        <input id="style-3"
+                        name="garden-style"
+                        type="radio"
+                        value="projektantka-kasia" />
+                        <label for="style-3" class="radio-label">Egzotyczny</label>
+                    </div>
+                    </div>
+                    </fieldset>
+
+
+                </div>
+            </div>
+
+            <!-- <div class="form-row">
+            <button>Submit</button>
+        </div>-->
+        </form>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Projektowanie orgrodów</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    
+    <div class="main-container">
+        <header>
+            <h1 id="title">Róża</h1>
+            <p>Ogrody to nasza pasja.</p>
+            <p class="border-bottom" id="description">Wypełnij formularz a skontaktujemy się z tobą i stworzymy ogród
+                twoich marzeń.</p>
+        </header>
+
+        <form action="" method="get" id="survey-form">
+
+            <div class="form-row-container">
+                <div class="form-row">
+                    <label id="name-label" for="name">Wpisz imię i nazwisko:</label>
+                    <input id="name" type="text" placeholder="Jan Kowalski" required />
+                </div>
+            </div>
+
+            <div class="form-row-container">
+                <div class="form-row">
+                    <label id="email-label" for="email">Wpisz e-mail:</label>
+                    <input id="email" name="email" type="email" placeholder="jankowalski&#x40;kwiaty.pl" required />
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom">
+                <div class="form-row">
+                    <label id="number-label" for="number">Podaj nr telefonu:</label>
+                    <input id="number" name="number" type="number" placeholder="999 999 999" min="100000000"
+                        max="999999999" step="" />
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom single-row">
+                <div class="form-row">
+                    <label for="dropdown">Wybierz wielkość swojego ogrodu:</label>
+                    <select id="dropdown" name="wielkosc-ogrodu">
+                        <option value="s">mały</option>
+                        <option value="m">średni</option>
+                        <option value="l">duży</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom single-row">
+                <div class="form-row">
+                    <fieldset>
+                        <legend>Styl ogrodu:</legend>
+                        <div class="label-container">
+                            <input id="style-1" name="garden-style" type="radio" value="projektant-marcin" />
+                            <label for="style-1" class="radio-label">Tradycyjny</label>
+
+                            <input id="style-2" name="garden-style" type="radio" value="projektantka-kasia" />
+                            <label for="style-2" class="radio-label">Modernistyczny</label>
+
+                            <input id="style-3" name="garden-style" type="radio" value="projektantka-kasia" />
+                            <label for="style-3" class="radio-label">Egzotyczny</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom single-row">
+                <div class="form-row">
+
+                    <label class="checkbox-label" for="zakres">Zakres prac:</label>
+
+                    <div class="checkbox-option">
+                        <input id="zakres" name="zakres" type="checkbox" value="projekt" />
+                        <span class="zakres-span">Stworzymy dla ciebie idealny projekt.</span>
+                    </div>
+
+                    <div class="checkbox-option">
+                        <input name="zakres" type="checkbox" value="wykonanie" />
+                        <span class="zakres-span">Ekipa naszych specjalistów zrealizuje projekt w twoim ogrodzie.</span>
+                    </div>
+
+                    <div class="checkbox-option">
+                        <input name="zakres" type="checkbox" value="pielegnacja" />
+                        <span class="zakres-span">Nasz ogrodnik będzie pielęgnował twój ogród, gwarantując jego świetną
+                            kondycję.</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-row-container border-bottom single-row">
+                <div class="form-row">
+                    <label for="comments">Jeśli masz jakieś pytania lub uwagi to wpisz je tu:</label>
+                    <textarea id="comments" name="comments" placeholder="Kiedy możecie zaprojektować mój ogród?"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row-container single-row">
+            <div class="form-row button">
+            <button id="submit">Chcę ogród marzeń!</button>
+        </div>
+    </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

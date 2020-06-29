@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+
+}
+
+.jump-to-nav a,
+nav a,
+nav a:active,
+nav a:link,
+nav a:visited {
+    color: midnightblue;
+}
+
+nav a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+nav h2 {
+    color: midnightblue;
+    margin: 10px;
+}
+
+.jump-to-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 1;
+
+    background-color: aliceblue;
+    width: 5.5em;
+    text-align: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+nav li,
+p {
+    font-size: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6em;
+    margin-right: 1em;
+}
+
+main h2 {
+    margin: 15px 0 15px 0;
+}
+
+main ol {
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 960px) {
+    nav {
+        position: fixed;
+        left: 0;
+        width: 300px;
+        height: 100%;
+    }
+
+    .jump-to-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    nav h2 {
+        padding: 15px 0 15px 0;
+    }
+
+    nav a {
+        font-size: 27px;
+        text-align: left;
+    }
+
+    nav li {
+        padding-bottom: 8px;
+    }
+
+    nav h2,
+    nav li {
+        text-align: left;
+        margin-left: 15px;
+        list-style: none;
+
+    }
+
+    main {
+        margin-left: 315px;
+        margin-right: 100px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 135%;
+        margin-bottom: 10px;
+    }
+
+    main ol {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    code {
+        background-color: rgb(165, 196, 196);
+    }
+}
+
