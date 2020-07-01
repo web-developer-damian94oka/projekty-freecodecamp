@@ -1,0 +1,1 @@
+To repozytorium zawiera wszystkie moje projekty z freecodecamp.org 
